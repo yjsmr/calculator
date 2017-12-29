@@ -16,7 +16,9 @@ public class Calculator {
             System.out.println("Enter operation:");
             o = sc.next().charAt(0);
             Integer result = calculator.performOperation(o, a, b);
-            System.out.println("Result: " + result);
+            if(result != null) {
+                System.out.println("Result: " + result);
+            }
 
         } catch (InputMismatchException e) {
             System.out.println(e.getMessage());
